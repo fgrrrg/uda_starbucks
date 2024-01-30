@@ -13177,7 +13177,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13193,6 +13193,7 @@ div#notebook {
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">Pipeline</span>
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">RidgeClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">make_pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">classification_report</span>
 
 <span class="o">%</span> <span class="n">matplotlib</span> <span class="n">inline</span>
 
@@ -13371,7 +13372,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">portfolio</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span><span class="s1">&#39;offer_id&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -14046,7 +14047,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">profile</span> <span class="o">=</span> <span class="n">profile</span><span class="p">[</span><span class="n">profile</span><span class="o">.</span><span class="n">age</span> <span class="o">!=</span> <span class="mi">118</span><span class="p">]</span>
@@ -15348,7 +15349,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">transcript</span><span class="p">,</span> <span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -15361,7 +15362,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#create new column to ensure only one offer_id column</span>
@@ -15381,7 +15382,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#join transcript with offer type</span>
@@ -16045,7 +16046,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;reward_x&#39;</span><span class="p">,</span><span class="s1">&#39;reward_y&#39;</span><span class="p">],</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -16058,7 +16059,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">=</span><span class="n">transcript</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">])</span>
@@ -16071,7 +16072,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">offers_view_transacted</span><span class="o">=</span><span class="n">transcript</span><span class="p">[[</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;offer_id&#39;</span><span class="p">,</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;event&#39;</span><span class="p">]][(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;transaction&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;offer viewed&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;offer_id&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">ffill</span><span class="p">()</span>
@@ -16085,7 +16086,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">=</span><span class="n">transcript</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">offers_view_transacted</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;event&#39;</span><span class="p">])</span>
@@ -16098,7 +16099,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">=</span><span class="n">transcript</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">offers_view_transacted</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;time&#39;</span><span class="p">,</span><span class="s1">&#39;event&#39;</span><span class="p">])</span>
@@ -16113,7 +16114,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">=</span><span class="n">transcript</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">portfolio</span><span class="p">,</span><span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;offer_id&#39;</span><span class="p">)</span>
@@ -16128,7 +16129,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;duration_x&#39;</span><span class="p">,</span><span class="s1">&#39;offer_type_x&#39;</span><span class="p">,</span><span class="s1">&#39;difficulty_x&#39;</span><span class="p">,</span><span class="s1">&#39;channels_x&#39;</span><span class="p">,</span><span class="s1">&#39;duration_y&#39;</span><span class="p">],</span><span class="n">inplace</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -16179,7 +16180,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">offers_viewed_transactions_completed</span><span class="o">=</span><span class="n">transcript</span><span class="p">[(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;offer viewed&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;transaction&#39;</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;offer completed&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -16240,7 +16241,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span><span class="p">{</span><span class="s1">&#39;email_x&#39;</span><span class="p">:</span><span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile_x&#39;</span><span class="p">:</span><span class="s1">&#39;mobile&#39;</span><span class="p">,</span>
@@ -16254,7 +16255,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;email_y&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile_y&#39;</span><span class="p">,</span>
@@ -16268,7 +16269,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;valid_completed&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;valid_completed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -16318,7 +16319,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">completed</span> <span class="o">=</span> <span class="n">transcript</span><span class="p">[(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;valid_completed&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;offer completed&#39;</span><span class="p">)][[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;offer_id&#39;</span><span class="p">,</span><span class="s1">&#39;valid_completed&#39;</span><span class="p">]]</span>
@@ -16331,7 +16332,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">completed</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -16344,7 +16345,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">testest</span> <span class="o">=</span> <span class="n">transcript</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;offer_id&#39;</span><span class="p">])[</span><span class="s1">&#39;valid_completed&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -16357,7 +16358,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">testest</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -16370,7 +16371,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">testdf2</span> <span class="o">=</span> <span class="n">transcript</span><span class="p">[</span><span class="n">transcript</span><span class="p">[</span><span class="s1">&#39;event&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;offer received&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">testest</span><span class="p">,</span> <span class="n">how</span> <span class="o">=</span> <span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span><span class="s1">&#39;offer_id&#39;</span><span class="p">])</span>
@@ -16420,7 +16421,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">testdf2</span><span class="p">[[</span><span class="s1">&#39;person&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">,</span> <span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span>
@@ -16435,7 +16436,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">profile</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span><span class="s1">&#39;person&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -16448,7 +16449,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">on</span> <span class="o">=</span><span class="s1">&#39;person&#39;</span><span class="p">)</span>
@@ -16461,7 +16462,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">income_cuts</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">48000</span><span class="p">,</span> <span class="mi">62000</span><span class="p">,</span> <span class="mi">78000</span><span class="p">,</span> <span class="mi">95000</span><span class="p">,</span> <span class="mi">120001</span><span class="p">]</span>
@@ -16479,7 +16480,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">year_labels</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2013</span><span class="p">,</span><span class="mi">2014</span><span class="p">,</span><span class="mi">2015</span><span class="p">,</span><span class="mi">2016</span><span class="p">,</span><span class="mi">2017</span><span class="p">,</span><span class="mi">2018</span><span class="p">]</span>
@@ -20107,7 +20108,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[240]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[[</span> <span class="s1">&#39;amount&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">,</span> <span class="s1">&#39;mobile&#39;</span><span class="p">,</span> <span class="s1">&#39;social&#39;</span><span class="p">,</span> <span class="s1">&#39;web&#39;</span><span class="p">,</span>
@@ -20129,7 +20130,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[241]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X</span><span class="o">=</span><span class="n">X</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -20142,10 +20143,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[242]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">valid_completed_y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">valid_completed_y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -20155,7 +20156,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[243]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -20327,7 +20328,7 @@ avg / total       0.73      0.75      0.73     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[246]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X2</span> <span class="o">=</span> <span class="n">X</span><span class="p">[[</span><span class="s1">&#39;48k&#39;</span><span class="p">,</span>             <span class="s1">&#39;62k&#39;</span><span class="p">,</span>
@@ -20348,16 +20349,17 @@ avg / total       0.73      0.75      0.73     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[281]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Logistic regression</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">LogisticRegression</span><span class="p">())])</span>
+<span class="n">model_lr</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">LogisticRegression</span><span class="p">())])</span>
 
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">model_lr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_lr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="n">report_df</span> <span class="o">=</span> <span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;Logistic Regression&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -20376,13 +20378,192 @@ avg / total       0.73      0.75      0.73     22884
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>             precision    recall  f1-score   support
 
-        0.0       0.60      0.41      0.49      6647
-        1.0       0.79      0.89      0.83     16237
+          0       0.60      0.41      0.49      6647
+          1       0.79      0.89      0.83     16237
 
 avg / total       0.73      0.75      0.73     22884
 
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[101]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+      <th>model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>avg / total</th>
+      <td>0.73123</td>
+      <td>0.748383</td>
+      <td>0.732621</td>
+      <td>0.0</td>
+      <td>Logistic Regression</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">classification_report_csv</span><span class="p">(</span><span class="n">report</span><span class="p">,</span><span class="n">model_name</span><span class="p">):</span>
+    <span class="n">report_data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">report</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">3</span><span class="p">]:</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">row_data</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+        <span class="n">row_data</span> <span class="o">=</span> <span class="n">row_data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_name</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">row_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row_data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row_data</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;f1_score&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row_data</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="n">row</span><span class="p">[</span><span class="s1">&#39;support&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row_data</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="n">report_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+    <span class="n">dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">report_data</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dataframe</span>
+    <span class="c1">#dataframe.to_csv(&#39;classification_report.csv&#39;, index = False)</span>
+
+<span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">report_df</span> <span class="o">=</span>  <span class="n">classification_report_csv</span><span class="p">(</span><span class="n">report</span><span class="p">,</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[56]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>class</th>
+      <th>f1_score</th>
+      <th>model</th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0.49</td>
+      <td>Logistic Regression</td>
+      <td>0.60</td>
+      <td>0.41</td>
+      <td>6647.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1</td>
+      <td>0.83</td>
+      <td>Logistic Regression</td>
+      <td>0.79</td>
+      <td>0.89</td>
+      <td>16237.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 </div>
 
 </div>
@@ -20443,7 +20624,7 @@ avg / total       0.73      0.75      0.73     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[276]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#XGBoost</span>
@@ -20452,7 +20633,7 @@ avg / total       0.73      0.75      0.73     22884
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="n">report_df</span> <span class="o">=</span> <span class="n">report_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;XGBoost&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -20465,19 +20646,58 @@ avg / total       0.73      0.75      0.73     22884
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[102]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             precision    recall  f1-score   support
 
-        0.0       0.62      0.42      0.50      6647
-        1.0       0.79      0.89      0.84     16237
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-avg / total       0.74      0.76      0.74     22884
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+      <th>model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>avg / total</th>
+      <td>0.731230</td>
+      <td>0.748383</td>
+      <td>0.732621</td>
+      <td>0.0</td>
+      <td>Logistic Regression</td>
+    </tr>
+    <tr>
+      <th>avg / total</th>
+      <td>0.742382</td>
+      <td>0.757997</td>
+      <td>0.742551</td>
+      <td>0.0</td>
+      <td>XGBoost</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -20486,7 +20706,123 @@ avg / total       0.74      0.76      0.74     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[274]:</div>
+<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pandas_classification_report</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">model_name</span><span class="p">):</span>
+    <span class="n">metrics_summary</span> <span class="o">=</span> <span class="n">precision_recall_fscore_support</span><span class="p">(</span>
+            <span class="n">y_true</span><span class="o">=</span><span class="n">y_true</span><span class="p">,</span> 
+            <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred</span><span class="p">)</span>
+    
+    <span class="n">avg</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">precision_recall_fscore_support</span><span class="p">(</span>
+            <span class="n">y_true</span><span class="o">=</span><span class="n">y_true</span><span class="p">,</span> 
+            <span class="n">y_pred</span><span class="o">=</span><span class="n">y_pred</span><span class="p">,</span>
+            <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">))</span>
+
+    <span class="n">metrics_sum_index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;precision&#39;</span><span class="p">,</span> <span class="s1">&#39;recall&#39;</span><span class="p">,</span> <span class="s1">&#39;f1-score&#39;</span><span class="p">,</span> <span class="s1">&#39;support&#39;</span><span class="p">]</span>
+    <span class="n">class_report_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+        <span class="c1">#list(metrics_summary),</span>
+        <span class="n">index</span><span class="o">=</span><span class="n">metrics_sum_index</span><span class="p">)</span>
+    
+    <span class="n">support</span> <span class="o">=</span> <span class="n">class_report_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;support&#39;</span><span class="p">]</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">support</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> 
+    <span class="n">avg</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">total</span>
+    
+    <span class="n">class_report_df</span><span class="p">[</span><span class="s1">&#39;avg / total&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">avg</span>
+    <span class="n">class_report_df</span><span class="o">=</span><span class="n">class_report_df</span><span class="o">.</span><span class="n">T</span>
+    <span class="n">class_report_df</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">model_name</span>
+    <span class="k">return</span> <span class="n">class_report_df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;XGBoost&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[98]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+      <th>model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>avg / total</th>
+      <td>0.742382</td>
+      <td>0.757997</td>
+      <td>0.742551</td>
+      <td>0.0</td>
+      <td>XGBoost</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">precision_recall_fscore_support</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Using decision trees</span>
@@ -20496,34 +20832,10 @@ avg / total       0.74      0.76      0.74     22884
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="n">report_df</span> <span class="o">=</span> <span class="n">report_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;Decision Trees&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             precision    recall  f1-score   support
-
-        0.0       0.54      0.49      0.51      6647
-        1.0       0.80      0.83      0.81     16237
-
-avg / total       0.72      0.73      0.73     22884
-
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -20581,7 +20893,7 @@ avg / total       0.72      0.73      0.73     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[269]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Using decision trees</span>
@@ -20590,7 +20902,50 @@ avg / total       0.72      0.73      0.73     22884
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+<span class="n">report_df</span> <span class="o">=</span> <span class="n">report_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;Ridge&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">RandomForestClassifier</span><span class="p">())])</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">report_df</span> <span class="o">=</span> <span class="n">report_df</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;Random Forest&#39;</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_df</span><span class="p">[</span><span class="s1">&#39;support&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">22884</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_df</span>
 </pre></div>
 
     </div>
@@ -20603,19 +20958,82 @@ avg / total       0.72      0.73      0.73     22884
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[110]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             precision    recall  f1-score   support
 
-        0.0       0.60      0.39      0.47      6647
-        1.0       0.78      0.89      0.83     16237
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-avg / total       0.73      0.75      0.73     22884
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-</pre>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+      <th>model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>avg / total</th>
+      <td>0.731230</td>
+      <td>0.748383</td>
+      <td>0.732621</td>
+      <td>22884</td>
+      <td>Logistic Regression</td>
+    </tr>
+    <tr>
+      <th>avg / total</th>
+      <td>0.742382</td>
+      <td>0.757997</td>
+      <td>0.742551</td>
+      <td>22884</td>
+      <td>XGBoost</td>
+    </tr>
+    <tr>
+      <th>avg / total</th>
+      <td>0.722641</td>
+      <td>0.730379</td>
+      <td>0.725819</td>
+      <td>22884</td>
+      <td>Decision Trees</td>
+    </tr>
+    <tr>
+      <th>avg / total</th>
+      <td>0.728901</td>
+      <td>0.747291</td>
+      <td>0.729119</td>
+      <td>22884</td>
+      <td>Ridge</td>
+    </tr>
+    <tr>
+      <th>avg / total</th>
+      <td>0.725597</td>
+      <td>0.735142</td>
+      <td>0.729196</td>
+      <td>22884</td>
+      <td>Random Forest</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -20677,7 +21095,7 @@ avg / total       0.73      0.75      0.73     22884
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[283]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Logistic regression</span>
@@ -20686,7 +21104,8 @@ avg / total       0.73      0.75      0.73     22884
 <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X2_train</span><span class="p">,</span> <span class="n">y2_train</span><span class="p">)</span>
 <span class="n">y2_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X2_test</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y2_test</span><span class="p">,</span> <span class="n">y2_pred</span><span class="p">))</span>
+<span class="n">report</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">report_df_dem</span> <span class="o">=</span> <span class="p">(</span><span class="n">classification_report_csv</span><span class="p">(</span><span class="n">report</span><span class="p">,</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -20702,27 +21121,18 @@ avg / total       0.73      0.75      0.73     22884
     <div class="prompt"></div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>             precision    recall  f1-score   support
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-67-eef00c49d720&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> model <span class="ansi-blue-fg">=</span> Pipeline<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;scl&#39;</span><span class="ansi-blue-fg">,</span> StandardScaler<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;clf&#39;</span><span class="ansi-blue-fg">,</span>LogisticRegression<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> 
+<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>model<span class="ansi-blue-fg">.</span>fit<span class="ansi-blue-fg">(</span>X2_train<span class="ansi-blue-fg">,</span> y2_train<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> y2_pred <span class="ansi-blue-fg">=</span> model<span class="ansi-blue-fg">.</span>predict<span class="ansi-blue-fg">(</span>X2_test<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> 
 
-        0.0       0.00      0.00      0.00      6647
-        1.0       0.71      1.00      0.83     16237
-
-avg / total       0.50      0.71      0.59     22884
-
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
-  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
-</pre>
+<span class="ansi-red-fg">NameError</span>: name &#39;X2_train&#39; is not defined</pre>
 </div>
 </div>
 
@@ -21005,6 +21415,422 @@ avg / total       0.50      0.71      0.59     22884
 <img src="data:image/png;base64,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MLmqjutIsZIkaUhcd9113HLLLay99tpsuummvOtd7+J//ud/OP300/nsZz/LaaedBrSWAcyZM4c777yTvffem1//+td8/vOfB+CGG27g1ltvZerUqdx+++0A/PKXv+T6669n7bXXZvbs2XzqU596IfguWrSISy+9lDFjxnDHHXdw+OGHM3fuXACuueYabrrpJjbYYAN23XVXrrjiCnbeeWfe8pa38J3vfIcpU6bw2GOP8fKXv5yvfOUrjB07lquuuoqnn36aXXfdlalTp/5ZTx3oyQDbQUm2oRVUdwaeAS5KsuQ7i1Or6lMdK06SJHXMlClTGDduHACbbbYZU6dOBWDbbbd9YUYV4M1vfjOjRo1i8803Z9NNN+XWW2/l8ssv573vfS8AEydO5FWvetULAXa//fZj7bXX7vWczz77LMcddxzXXnstK6200gvHAOy8885stNFGAEyaNIn58+czduxYxo0bx5QpUwBYc801Abjkkku4/vrrOeeccwBYsGABd9xxhwF2BNkSuLKqFgEkmQMcPJADkxwAfBg4qKoeGrwSJUnSUFtllVVe2B41atQL70eNGsXixYtf2Nfzjv4kL3y935vVVlutz32nnnoq66+/Ptdddx3PP/88Y8aM6bWelVZaicWLF1NVvT5RoKr47Gc/y/7779/PFf55XAPbWTcCeyRZJ8mqwBuAjZt9xyW5PslXk7yi/aAkBwMnAm/oGV6TTE8yN8nc5xYtGIprkCRJHTJr1iyef/557rzzTu666y4mTJjAHnvswdlnnw3A7bffzv/+7/8yYcKEFx27xhpr8Pjjj7/wfsGCBYwbN45Ro0bxjW98g+eee67fc0+cOJH77ruPq666CoDHH3+cxYsXs//++3PGGWfw7LPPvlDDE088sbwuGXAGtqOq6pYkpwCXAguB64DFwBnAx4Fq/v00cFRz2N7AZGBqVT3Wy5gzgBkAq4zbvO//gkmSpK43YcIE9txzTx544AHOPPNMxowZw3ve8x6OOeYYtt12W0aPHs3MmTP/ZAZ1ie22247Ro0ez/fbbM23aNN7znvdwyCGHMGvWLPbee+9+Z2sBXvayl/Gd73yH9773vTz55JO8/OUv58c//jHvete7mD9/PjvuuCNVxXrrrcd55523XK87/U0za2gl+SRwT1V9oa1tPHBBVW3T3MR1CLApcERVze1vvFXG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
 "
 >
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">GradientBoostingClassifier</span><span class="p">(),</span>
+                                                                <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span>
+                                                                 <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_weighted&#39;</span><span class="p">,</span>
+                                                                 <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                                                                 <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+                                                                <span class="n">refit</span><span class="o">=</span><span class="kc">True</span><span class="p">)])</span>
+
+<span class="n">cross_val_score</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span> <span class="o">=</span> <span class="s1">&#39;f1_weighted&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[112]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 0.74393433,  0.74255693,  0.74302343,  0.74321469,  0.74105983])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">StandardScaler</span><span class="p">(),</span> 
+                    <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">LogisticRegression</span><span class="p">(),</span>
+                                 <span class="n">param_grid</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;logisticregression__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">10.</span><span class="p">]},</span>
+                                 <span class="n">cv</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                                 <span class="n">refit</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[131]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;max_depth&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span>
+    <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">],</span>
+    <span class="s1">&#39;learning_rate&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[128]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
+                     <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span>
+                     <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_weighted&#39;</span><span class="p">,</span>
+                     <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+                     <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[134]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">GradientBoostingClassifier</span><span class="p">(),</span>
+                                                                <span class="n">param_grid</span><span class="o">=</span><span class="n">parameters</span><span class="p">,</span>
+                                                                 <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1_weighted&#39;</span><span class="p">,</span>
+                                                                 
+                                                                 <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
+                                                                <span class="n">refit</span><span class="o">=</span><span class="kc">True</span><span class="p">))])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[135]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+/opt/conda/lib/python3.6/site-packages/sklearn/metrics/classification.py:1135: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no predicted samples.
+  &#39;precision&#39;, &#39;predicted&#39;, average, warn_for)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[135]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Pipeline(memory=None,
+     steps=[(&#39;scl&#39;, StandardScaler(copy=True, with_mean=True, with_std=True)), (&#39;clf&#39;, GridSearchCV(cv=None, error_score=&#39;raise&#39;,
+       estimator=GradientBoostingClassifier(criterion=&#39;friedman_mse&#39;, init=None,
+              learning_rate=0.1, loss=&#39;deviance&#39;, max_depth=3,
+              max_features=None...spatch=&#39;2*n_jobs&#39;, refit=True, return_train_score=&#39;warn&#39;,
+       scoring=&#39;f1_weighted&#39;, verbose=0))])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[136]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;clf&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">best_params_</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[136]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>{&#39;learning_rate&#39;: 0.05, &#39;max_depth&#39;: 5, &#39;n_estimators&#39;: 200}</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#XGBoost</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scl&#39;</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;clf&#39;</span><span class="p">,</span>
+                                              <span class="n">GradientBoostingClassifier</span><span class="p">(</span>
+                                                  <span class="n">learning_rate</span><span class="o">=</span> <span class="mf">0.05</span><span class="p">,</span> 
+                                                  <span class="n">max_depth</span><span class="o">=</span> <span class="mi">5</span><span class="p">,</span> 
+                                                  <span class="n">n_estimators</span><span class="o">=</span> <span class="mi">200</span><span class="p">))])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="c1">#report_df = report_df.append(pandas_classification_report(y_test, y_pred, &#39;XGBoost&#39;))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_dfcv</span> <span class="o">=</span> <span class="n">pandas_classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;XGBoost GridSearchCV&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_dfcv</span><span class="p">[</span><span class="s1">&#39;support&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">22884</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[144]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">report_dfcv</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[144]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>precision</th>
+      <th>recall</th>
+      <th>f1-score</th>
+      <th>support</th>
+      <th>model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>avg / total</th>
+      <td>0.745178</td>
+      <td>0.760619</td>
+      <td>0.744381</td>
+      <td>22884</td>
+      <td>XGBoost GridSearchCV</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">accuracy_score</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[147]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.76061877294179336</pre>
 </div>
 
 </div>
